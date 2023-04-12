@@ -17,6 +17,13 @@ The repository contains the following files:
 
 To use this code, you will need to have TensorFlow and tensorflow-dataset installed. You can then run the Python scripts for training the models or open the Jupyter notebooks for a more interactive experience.
 
+```shell
+python bunny.py
+
+```
+
+
+
 ## Acknowledgements
 
 The malaria, bunny  and Stanford Online Products datasets were obtained from [tensorflow offical website](https://www.tensorflow.org/datasets/catalog/).

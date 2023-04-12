@@ -19,7 +19,7 @@ To use this code, you will need to have TensorFlow and tensorflow-dataset instal
 
 ## Acknowledgements
 
-The malaria, bunny  and Stanford Online Products datasets were obtained from [tensorflow offical website](https://www.tensorflow.org/datasets/catalog/), while the bunny dataset was created by the author.
+The malaria, bunny  and Stanford Online Products datasets were obtained from [tensorflow offical website](https://www.tensorflow.org/datasets/catalog/).
 
 ## License
 

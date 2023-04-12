@@ -14,16 +14,17 @@ The repository contains the following files:
 - `bunny_core.ipynb`: Jupyter notebook containing code for training and evaluating the bunny classification model.
 
 ## Usage
-
+To install the necessary libraries.
+```shell
+python -m pip install -r requirements.txt
+```
 To use this code, you will need to have TensorFlow and tensorflow-dataset installed. You can then run the Python scripts for training the models or open the Jupyter notebooks for a more interactive experience.
 
 ```shell
 python bunny.py
-
+python stanford.py
+python malaria.py
 ```
-
-
-
 ## Acknowledgements
 
 The malaria, bunny  and Stanford Online Products datasets were obtained from [tensorflow offical website](https://www.tensorflow.org/datasets/catalog/).

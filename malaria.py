@@ -20,7 +20,7 @@ dataset = dataset.map(preprocess_data)
 
 dataset = dataset.batch(batch_size).prefetch(tf.data.experimental.AUTOTUNE)
 vgg19 = tf.keras.applications.vgg19.VGG19(include_top = False, input_shape = (32, 32, 3), weights = 'imagenet')
-#vgg19.summary()  ### To show the model's architecture
+
 
 
 model_vgg19 = Sequential()
@@ -34,7 +34,6 @@ model_vgg19.add(Dense(4096, activation = 'relu'))
 model_vgg19.add(Dropout(0.2))
 model_vgg19.add(Dense(1024, activation = 'relu'))
 model_vgg19.add(Dense(2, activation = 'softmax'))
-#model_vgg19.summary()
 
 
 loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)    
@@ -72,11 +71,9 @@ reduceLR = ReduceLROnPlateau(
 )
 callbacks = [checkpoint, earlystop, csvlogger,reduceLR]
 
-### To fit the model
 history = model_vgg19.fit(
     dataset, 
     epochs = 10,
-    # validation_data = normalized_val_ds, 
     callbacks = callbacks,
     shuffle = True
 )
